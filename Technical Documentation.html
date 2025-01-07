@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Elements">Elements</a></li>
+            <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+            <li><a class="nav-link" href="#Nesting">Nesting</a></li>
+            <li><a class="nav-link" href="#Basic_Structure">Basic Structure</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and design the structure of
+                web
+                pages. It is the foundation of almost all websites and is used to define the content and layout of a
+                page, such as text, images, links, forms, and other multimedia elements.
+            </p>
+            <p>HTML consists of a series of elements (or tags) that describe the structure and content of a webpage.
+                These elements are enclosed within angle brackets, like
+                <code>&lt;tagname&gt;</code>. Tags usually come in pairs: an opening tag (e.g.,
+                <code>&lt;p&gt;</code>) and a closing tag (e.g., <code>&lt;/p&gt;</code>), with the content in
+                between.
+            </p>
+            <p>In this document we will cover the following Key Concepts of HTML:</p>
+            <ul>
+                <li>Introduction</li>
+                <li>Elements</li>
+                <li>Attributes</li>
+                <li>Nesting</li>
+                <li>Basic Structure</li>
+                <li>Conclusion</li>
+            </ul>
+        </section>
+
+        <section id="Elements" class="main-section">
+            <header>
+                <h2>Elements</h2>
+            </header>
+            <p>HTML elements are the fundamental building blocks of web pages, defining the structure and content of
+                a
+                website. An HTML element typically consists of an opening tag, content, and a closing tag. The
+                opening
+                tag is written with angle brackets, such as <code>&lt;p&gt;</code> for a paragraph or
+                <code>&lt;h1&gt;</code> for a main heading, and the closing tag includes a forward slash before the
+                tag
+                name, like <code>&lt;/p&gt;</code>or <code>&lt;/h1&gt;</code>. Elements can also be self-closing,
+                such
+                as the <code>&lt;img&gt;</code> tag for images or the <code>&lt;br&gt;</code> tag for line breaks,
+                which
+                do not require a separate closing tag. These elements work together to form the structure of a web
+                page,
+                organizing content into readable sections, lists, and multimedia.
+            </p>
+            <p>In addition to structure, HTML elements can be used to create interactive and functional components
+                of a
+                webpage. For example, forms are built with elements like <code>&lt;input&gt;</code>,
+                <code>&lt;button&gt;</code>, and <code>&lt;select&gt;</code>, allowing users to submit data. Links
+                to
+                other pages or external resources are created with the <code>&lt;a&gt;</code> element, while images,
+                audio, and video can be embedded using <code>&lt;img&gt;</code>, <code>&lt;audio&gt;</code>, and
+                <code>&lt;video&gt;</code> elements. HTML elements can also include attributes, such as href for
+                links
+                or src for images, to provide additional information or customize behavior. Together, HTML elements
+                enable developers to create diverse and dynamic web experiences.
+            </p>
+        </section>
+
+        <section id="Attributes" class="main-section">
+            <header>
+                <h2>Attributes</h2>
+            </header>
+            <p>HTML attributes provide additional information about HTML elements and are used to modify their
+                behavior
+                or appearance. Attributes are always written in the opening tag of an element, consisting of a name
+                and
+                a value, separated by an equals sign. Common attributes include class, id, href, src, and alt. For
+                example, in an image tag, you can use the src attribute to specify the image source and the alt
+                attribute to provide alternative text for the image if it cannot be displayed:
+                <code>&lt;img src="image.jpg" alt="Description of image"&gt;</code>. Here, src specifies the image
+                file
+                location, and alt provides a text description for accessibility or when the image is missing.
+            </p>
+        </section>
+
+        <section id="Nesting" class="main-section">
+            <header>
+                <h2>Nesting</h2>
+            </header>
+            <p>HTML nesting refers to the practice of placing one HTML element inside another to create a
+                hierarchical
+                structure and organize content. Elements can be nested within other elements to form more complex
+                layouts or functionality. For example, a <code>&lt;ul&gt;</code> (unordered list) can contain
+                multiple
+                <code>&lt;li&gt;</code> (list item) elements, and those list items can, in turn, contain other
+                elements
+                like <code>&lt;a&gt;</code> (links) or <code>&lt;img&gt;</code> (images). Here's an example of
+                nested
+                HTML:
+            </p>
+            <pre><code>
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;img src="image.jpg" alt="An example image"&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            </code></pre>
+            <p>In this example, the unordered list (<code>&lt;ul&gt;</code>) contains two list items
+                (<code>&lt;li&gt;</code>), one with a link (<code>&lt;a&gt;</code>) and the other with an image
+                (<code>&lt;img&gt;</code>). Nesting elements in this way helps structure content logically and
+                semantically, making it easier to manage and style.</p>
+        </section>
+
+        <section id="Basic_Structure" class="main-section">
+            <header>
+                <h2>Basic Structure</h2>
+            </header>
+            <p>The basic structure of an HTML document consists of several key elements that define the webpage's
+                content and layout. At the core, every HTML document begins with the
+                <code>&lt;!DOCTYPE html&gt;</code>
+                declaration, followed by the opening <code>&lt;html&gt;</code> tag. Inside this tag, the document is
+                divided into two main sections: the <code>&lt;head&gt;</code> and the <code>&lt;body&gt;</code>. The
+                <code>&lt;head&gt;</code> section contains meta-information like the title of the page, linked CSS
+                files, and other resources, while the <code>&lt;body&gt;</code> section holds the visible content
+                such
+                as text, images, and links. For example:
+            </p>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;title&gt;My First Webpage&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+                    &lt;p&gt;This is a basic HTML structure example.&lt;/p&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+            <p>In this example, the title element inside the <code>&lt;head&gt;</code> tag sets the page's title in
+                the
+                browser tab, and the content inside the <code>&lt;body&gt;</code> is what users will see when they
+                visit
+                the page.</p>
+        </section>
+
+        <section id="Conclusion" class="main-section">
+            <header>
+                <h2>Conclusion</h2>
+            </header>
+            <p>HTML is a powerful and essential tool for building websites. By understanding its structure and tags,
+                you can create web pages with text, images, links, and other content. HTML serves as the backbone of
+                web design, and when combined with CSS (for styling) and JavaScript (for interactivity), it enables
+                the creation of fully functional and visually appealing websites.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
